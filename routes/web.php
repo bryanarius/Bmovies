@@ -8,4 +8,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/' , [MoviesController::class, 'index']);
 
  
-Route::get('/movies' , [MoviesController::class, 'show']);
+Route::get('/movies/movie{movie}' , [MoviesController::class, 'show']);

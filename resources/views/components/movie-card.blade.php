@@ -1,10 +1,10 @@
 <div class="mt-8">
-        <a href="{{ route('show', $movie['id']) }}">
+        <a href="/movies/movie{{$movie['id']}}">
             <img src="{{'https://image.tmdb.org/t/p/w500'.$movie['poster_path']}}" alt="poster" class="hover:opacity-75 transition ease-in-out duration-150">
         </a>
 
     <div class="div mt-2">
-        <a href="{{ route('show', $movie['id']) }}" class="text-lg mt-2 hover:text-gray:300">{{$movie['title']}}</a>
+        <a href="/movies/movie{{$movie['id']}}" class="text-lg mt-2 hover:text-gray:300">{{$movie['title']}}</a>
     </div>
 
     <div class="div flex items-center text-gray-400 text-sm mt-1">
