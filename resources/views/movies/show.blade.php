@@ -110,15 +110,15 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 @foreach ($movie['images'] as $image)
                    
-                        <div class="mt-8">
-                            <a 
-                                @click.prevent="isOpen = true"
-                                image='{{'https://image.tmdb.org/t/p/original'.$image['file_path']}}'
-                                href="#"
-                            >
-                                    <img src="{{'https://image.tmdb.org/t/p/w500'.$image['file_path']}}" alt="image" class="hover:opacity-75 transition ease-in-out duration-150">
-                            </a>
-                        </div>
+                    <div class="mt-8">
+                        <a 
+                            @click.prevent="isOpen = true"
+                            image='{{'https://image.tmdb.org/t/p/original'.$image['file_path']}}'
+                            href="#"
+                        >
+                            <img src="{{'https://image.tmdb.org/t/p/w500'.$image['file_path']}}" alt="image" class="hover:opacity-75 transition ease-in-out duration-150">
+                        </a>
+                    </div>
                 @endforeach
             </div>
 
