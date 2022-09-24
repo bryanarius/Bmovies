@@ -39,8 +39,8 @@ class MoviesController extends Controller
      return view('movies.index', $viewModel);
     }
 
-    public function show($movie) {
-        $movie = http::get("https://api.themoviedb.org/3/movie/".$movie."?api_key=52ffb2d1c618379d189e12ac312404be&append_to_response=videos,images,credits")
+    public function show($id) {
+        $movie = http::get("https://api.themoviedb.org/3/movie/".$id."?api_key=52ffb2d1c618379d189e12ac312404be&append_to_response=videos,images,credits")
         ->json();
 
         $viewModel = new MovieViewModel($movie);

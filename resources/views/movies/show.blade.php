@@ -87,7 +87,7 @@
 
             @foreach ($movie['cast'] as $cast)
                 <div class="mt-8">
-                        <a href="#">
+                        <a href="/actors/actor{{ $cast['id']}}}">
                             <img src="{{'https://image.tmdb.org/t/p/w300'.$cast['profile_path']}}" alt="Cast" class="hover:opacity-75 transition ease-in-out duration-150">
                         </a>
         
