@@ -91,6 +91,7 @@
                             <img src="{{'https://image.tmdb.org/t/p/w300'.$cast['profile_path']}}" alt="Cast" class="hover:opacity-75 transition ease-in-out duration-150">
                         </a>
         
+                        
                     <div class="div mt-2">
                         <a href="#" class="text-lg mt-2 hover:text-gray:300">{{$cast['name']}}</a>
                         <div class="text-sm text-gray-400">
